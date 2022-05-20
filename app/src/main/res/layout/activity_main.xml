@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_login_illustration" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Welcome Back!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/emailAdress"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_rectangle"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_rectangle_copy"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingRight="9dp"
+            android:shadowRadius="8"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailAdress" />
+
+        <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="9dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/password">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="left"
+                android:onClick="@{listener::onClick}"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_pass_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+
+                android:background="#00FFFFFF"
+                android:onClick="@{listener::onClick}"
+                android:text="Forgot Password"
+                android:textAllCaps="false"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                 />
+        </LinearLayout>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="567dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_button_shape"
+            android:onClick="@{listener::onClick}"
+            android:text="LOG IN"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Or connect with social"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="720dp"
+            android:layout_marginEnd="194dp"
+            android:background="@drawable/ic_button_blue"
+            android:onClick="@{listener::onClick}"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="720dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_button_orange"
+            android:onClick="@{listener::onClick}"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

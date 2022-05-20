@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_coin_bg"
+        tools:context=".HomeActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ethereum_wallet" />
+
+        <ImageView
+            android:id="@+id/btcImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="259dp"
+            android:layout_marginEnd="194dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_purple_bg" />
+        <TextView
+            android:id="@+id/text_btc_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="30dp"
+            android:text="$1280.39"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btcImage"
+            app:layout_constraintTop_toTopOf="@+id/btcImage" />
+
+        <TextView
+            android:id="@+id/text_btc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="105dp"
+            android:text="ETH — Ethereum"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btcImage"
+            app:layout_constraintTop_toTopOf="@+id/btcImage" />
+
+        <TextView
+            android:id="@+id/text_btc_price_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="128dp"
+            android:text="$1280.39"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btcImage"
+            app:layout_constraintTop_toTopOf="@+id/btcImage" />
+        <ImageView
+            android:id="@+id/bchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="259dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_green_bg" />
+        <TextView
+            android:id="@+id/text_bch_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="23dp"
+            android:text="$1280.39"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bchImage"
+            app:layout_constraintTop_toTopOf="@+id/bchImage" />
+
+        <TextView
+            android:id="@+id/text_bch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="105dp"
+            android:text="ETH — Ethereum"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bchImage"
+            app:layout_constraintTop_toTopOf="@+id/bchImage" />
+
+        <TextView
+            android:id="@+id/text_bch_price_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="128dp"
+            android:text="$1280.39"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bchImage"
+            app:layout_constraintTop_toTopOf="@+id/bchImage" />
+        <ImageView
+            android:id="@+id/bsvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="194dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_orange_bg" />
+        <TextView
+            android:id="@+id/text_bsv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="23dp"
+            android:text="$1280.39"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bsvImage"
+            app:layout_constraintTop_toTopOf="@+id/bsvImage" />
+
+        <TextView
+            android:id="@+id/text_bsv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="105dp"
+            android:text="ETH — Ethereum"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bsvImage"
+            app:layout_constraintTop_toTopOf="@+id/bsvImage" />
+
+        <TextView
+            android:id="@+id/text_bsv_price_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="128dp"
+            android:text="$1280.39"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bsvImage"
+            app:layout_constraintTop_toTopOf="@+id/bsvImage" />
+
+        <ImageView
+            android:id="@+id/ethImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="440dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pink_bg" />
+
+        <TextView
+            android:id="@+id/text_eth_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="23dp"
+            android:text="$1280.39"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ethImage"
+            app:layout_constraintTop_toTopOf="@+id/ethImage" />
+
+        <TextView
+            android:id="@+id/text_eth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="105dp"
+            android:text="ETH — Ethereum"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ethImage"
+            app:layout_constraintTop_toTopOf="@+id/ethImage" />
+
+        <TextView
+            android:id="@+id/text_eth_price_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="128dp"
+            android:text="$1280.39"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ethImage"
+            app:layout_constraintTop_toTopOf="@+id/ethImage" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
