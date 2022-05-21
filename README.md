@@ -33,4 +33,5 @@ Facebook Authentication
 
 # Coin List Ekranı 
 
-![Screenshot_20220521-142455_Firebase Authentication](https://user-images.githubusercontent.com/74022745/169649786-ab9d55cf-b3ac-4f63-83e8-c90106f7198e.jpg)
+![Screenshot_20220521-220645_Firebase_Authentication 1 jpg](https://user-images.githubusercontent.com/74022745/169665993-a849c54e-b755-4780-990e-faef0ad83805.png)
+
