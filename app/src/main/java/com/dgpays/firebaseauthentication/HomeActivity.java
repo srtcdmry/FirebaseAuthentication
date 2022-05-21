@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
     private List<CoinResources> dataArrayList;
     private ActivityHomeBinding binding;
     Handler mHandler;
-    NumberFormat formatter = new DecimalFormat("##.##");
+    NumberFormat formatter = new DecimalFormat("###,###.##");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,15 +72,15 @@ public class HomeActivity extends AppCompatActivity {
         binding.textBtcPriceSubs.setText("$" + formatter.format(dataArrayList.get(0).getPrice()));
 
         binding.textBchPrice.setText("$" + formatter.format(dataArrayList.get(1).getPrice()));
-        binding.textBchName.setText(dataArrayList.get(0).getCoin() + " - " + dataArrayList.get(1).getName());
+        binding.textBchName.setText(dataArrayList.get(1).getCoin() + " - " + dataArrayList.get(1).getName());
         binding.textBchPriceSubs.setText("$" + formatter.format(dataArrayList.get(1).getPrice()));
 
         binding.textBsvPrice.setText("$" + formatter.format(dataArrayList.get(2).getPrice()));
-        binding.textBsvName.setText(dataArrayList.get(0).getCoin() + " - " + dataArrayList.get(2).getName());
+        binding.textBsvName.setText(dataArrayList.get(2).getCoin() + " - " + dataArrayList.get(2).getName());
         binding.textBsvPriceSubs.setText("$" + formatter.format(dataArrayList.get(2).getPrice()));
 
         binding.textEthPrice.setText("$" + formatter.format(dataArrayList.get(3).getPrice()));
-        binding.textEthName.setText(dataArrayList.get(0).getCoin() + " - " + dataArrayList.get(3).getName());
+        binding.textEthName.setText(dataArrayList.get(3).getCoin() + " - " + dataArrayList.get(3).getName());
         binding.textEthPriceSubs.setText("$" + formatter.format(dataArrayList.get(3).getPrice()));
     }
 
